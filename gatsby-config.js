@@ -6,5 +6,17 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-image`,
+    `gatsby-plugin-fontawesome-css`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./static/images/photography/`,
+      },
+    },
+  ],
+  pathPrefix: `/portfolio-v2`,
 }

@@ -1,0 +1,146 @@
+.header {
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s all ease;
+    z-index: 1;
+}
+
+.header.active {
+    background-color:#202020;
+    transition: 0.3s all ease;
+}
+
+.header-container {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo > span {
+    font-size: 2rem;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0cf;
+}
+
+.menu {
+    display: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.nav-list.active {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+li {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    margin-left: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+nav .svg-inline--fa {
+    display: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .header {
+        height: 80px;
+    }   
+    .header-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav .svg-inline--fa {
+        display: block;
+    }
+    nav span {
+        font-size: 10px;
+    }
+    li {
+    margin: 0 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    li {
+        margin: 0 1.2rem;
+    }
+    nav span {
+        font-size: 12px;
+    }
+    nav .svg-inline--fa {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    nav {
+        display: none;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        transform: translate(-30px);
+    }
+}
+
+.MuiTypography-body1 {
+    font-family: 'Assistant', sans-serif !important;
+}
+
+.MuiDrawer-paper {
+    background-color: #202020!important;
+    color: white!important;
+}
+
+.svg-inline--fa {
+    color: white!important;
+}
