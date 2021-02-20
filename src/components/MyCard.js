@@ -23,14 +23,14 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function MyCard() {
+export default function MyCard(props) {
   const classes = useStyles()
 
   return (
     <Card>
       <CardMedia
         className={classes.media}
-        image={"/portfolio-v2/images/bg3.jpg"}
+        image={props.image}
         title="Carl Edward"
       />
       <div className="about-info">

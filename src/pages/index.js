@@ -32,7 +32,7 @@ export default function Home() {
             <hr />
           </div>
           <div className="about-content">
-            <MyCard image={"/portfolio-v2/images/bg3.jpg"} />
+            <MyCard image={"/portfolio-v2/images/bg3.JPG"} />
             <Skills />
           </div>
         </div>
