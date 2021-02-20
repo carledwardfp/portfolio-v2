@@ -32,57 +32,62 @@ export default function Project(props) {
   const classes = useStyles()
 
   return (
-    <Card className={classes.root}>
-      <CardHeader
-        avatar={<Avatar aria-label="recipe">{props.type}</Avatar>}
-        title={props.title}
-        subheader={props.subtitle}
-      />
-      <CardMedia
-        className={classes.media}
-        image={props.image}
-        title="Todo App (practice project)"
-      />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {props.summary}
-        </Typography>
-      </CardContent>
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          Made with:
-        </Typography>
-      </CardContent>
-      <CardContent className={classes.madeWith}>
-        {props.madeWith.map(icon => {
-          if (typeof icon === "string") {
-            return (
-              <CardHeader
-                className="noMargin"
-                avatar={
-                  <Avatar
-                    aria-label="recipe"
-                    className={classes.icons}
-                    style={{ fontSize: 10 }}
-                  >
-                    {icon}
-                  </Avatar>
-                }
-              />
-            )
-          }
-          return (
-            <CardHeader
-              className="noMargin"
-              avatar={
-                <Avatar aria-label="recipe" className={classes.icons}>
-                  <FontAwesomeIcon icon={icon} />
-                </Avatar>
+    <a href={props.link} target="_blank" rel="noreferrer">
+        <Card className={classes.root}>
+          <CardHeader
+            avatar={<Avatar aria-label="recipe">{props.type}</Avatar>}
+            title={props.title}
+            subheader={props.subtitle}
+          />
+          <CardMedia
+            className={classes.media}
+            image={props.image}
+            title="Todo App (practice project)"
+          />
+          <CardContent>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {props.summary}
+            </Typography>
+          </CardContent>
+          <CardContent>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Made with:
+            </Typography>
+          </CardContent>
+          <CardContent className={classes.madeWith}>
+            {props.madeWith.map((icon, key) => {
+              if (typeof icon === "string") {
+                return (
+                  <CardHeader
+                    key={key}
+                    className="noMargin"
+                    avatar={
+                      <Avatar
+                        aria-label="recipe"
+                        className={classes.icons}
+                        style={{ fontSize: 10 }}
+                      >
+                        {icon}
+                      </Avatar>
+                    }
+                  />
+                )
               }
-            />
-          )
-        })}
-      </CardContent>
-    </Card>
+              return (
+                <CardHeader
+                  key={key}
+                  className="noMargin"
+                  avatar={
+                    <Avatar aria-label="recipe" className={classes.icons}>
+                      <FontAwesomeIcon icon={icon} />
+                    </Avatar>
+                  }
+                />
+              )
+            })}
+          </CardContent>
+        </Card>
+
+    </a>
   )
 }

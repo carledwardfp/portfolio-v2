@@ -69,15 +69,21 @@ export default function MyCard(props) {
           backgroundColor: "#e7e7e7",
         }}
       >
-        <IconButton aria-label="facebook">
-          <FacebookIcon />
-        </IconButton>
-        <IconButton aria-label="github">
-          <GitHubIcon />
-        </IconButton>
-        <IconButton aria-label="instagram">
-          <InstagramIcon />
-        </IconButton>
+        <a href="https://www.facebook.com/carl.pahuyo/" target="_blank" rel="noreferrer">
+            <IconButton aria-label="facebook">
+              <FacebookIcon />
+            </IconButton>
+        </a>
+        <a href="https://github.com/official-carledwardfp" target="_blank" rel="noreferrer">
+          <IconButton aria-label="github">
+            <GitHubIcon />
+          </IconButton>
+        </a>
+        <a href="https://www.instagram.com/carledwardfp/" target="_blank" rel="noreferrer">
+          <IconButton aria-label="instagram">
+            <InstagramIcon />
+          </IconButton>
+        </a>
       </CardActions>
     </Card>
   )
