@@ -6,6 +6,11 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `CE - Portfolio`,
+    description: `A webpage to showcase my skills.`,
+    author: `@official-carledwardfp`,
+  },
   plugins: [
     `gatsby-image`,
     `gatsby-plugin-fontawesome-css`,
