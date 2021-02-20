@@ -30,7 +30,7 @@ export default function MyCard() {
     <Card>
       <CardMedia
         className={classes.media}
-        image={"/images/bg3.jpg"}
+        image={"/portfolio-v2/images/bg3.jpg"}
         title="Carl Edward"
       />
       <div className="about-info">

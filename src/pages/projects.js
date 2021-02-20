@@ -36,7 +36,7 @@ const projects = () => {
               title="SIMPLE TODO APP"
               subtitle="Practice Project"
               type="PP"
-              image={"/images/practice-project-todo.png"}
+              image={"/portfolio-v2/images/practice-project-todo.png"}
               summary="This is my first practice project. I tried to learn the basic functions of ReactJS by creating a simple to-do app where you can add and delete tasks."
               madeWith={[faReact, faCss3]}
             />
@@ -44,7 +44,7 @@ const projects = () => {
               title="BTC / STOCK MARKET"
               subtitle="Practice Project"
               type="PP"
-              image={"/images/practice-project-stockm.png"}
+              image={"/portfolio-v2/images/practice-project-stockm.png"}
               summary="In this project, I have learned to map data from external API (free). I used asynchronous api calls with Axios and Chart JS for the visualization of data."
               madeWith={[faReact, "AXIOS", "ChartJS"]}
             />
@@ -52,7 +52,7 @@ const projects = () => {
               title="WEATHER APP"
               subtitle="Practice Project"
               type="PP"
-              image={"/images/practice-project-weather.png"}
+              image={"/portfolio-v2/images/practice-project-weather.png"}
               summary="I built a weather app where you just have to type in the name of the city you want to look up. I also used Axios to fetch the data from an external API (free)."
               madeWith={[faReact, "AXIOS"]}
             />
@@ -60,7 +60,7 @@ const projects = () => {
               title="GITHUB CARD"
               subtitle="Practice Project"
               type="PP"
-              image={"/images/practice-project-githubcard.png"}
+              image={"/portfolio-v2/images/practice-project-githubcard.png"}
               summary="Another project that uses external API (github) where you can search for a github user and it will show you his/her basic information."
               madeWith={[faReact, "AXIOS"]}
             />
