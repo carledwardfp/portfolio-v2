@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronCircleDown } from "@fortawesome/free-solid-svg-icons"
 import MyCard from "../components/MyCard"
 import Skills from "../components/Skills"
+import SEO from "../components/seo"
 
 export default function Home() {
   const goDown = () => {
@@ -15,6 +16,7 @@ export default function Home() {
 
   return (
     <Layout>
+      <SEO title="CE - Web Development" />
       <div className="to-bottom">
         <FontAwesomeIcon icon={faChevronCircleDown} onClick={goDown} />
       </div>
